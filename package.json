@@ -1,0 +1,26 @@
+{
+  "name": "jokebot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start:dev": "nodemon index.js",
+    "test": "NODE_ENV=test mocha ./**/*.spec.js",
+    "test:watch": "NODE_ENV=test mocha -w ./**/*.spec.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "env": "^0.0.2",
+    "express": "^4.16.2",
+    "mocha": "^5.0.4",
+    "morgan": "^1.9.0",
+    "pg": "^7.4.1",
+    "sequelize": "^4.35.1",
+    "twilio": "^3.13.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "nodemon": "^1.17.1",
+    "supertest": "^3.0.0"
+  }
+}
